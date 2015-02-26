@@ -21,24 +21,57 @@
   font-weight: normal
   font-style: normal
 
+video
+  position: absolute
+  width: 1450px
+  bottom: -200px
+  left: 0
+  z-index: -1
+
 body
   background-color: black
   color: white
   font-family: Times
   text-align: center
 
-h1.give-back
-  font-family: edo_szregular
-  font-size: 120px
-  margin-top: 100px
+.header
+  height: 50px
 
-p.give-back-caption
-  margin: 10px
-  font-size: 30px
+.give-back
+  position: relative
+  height: 500px
 
-button.segment
-  margin: 20px
+  #hero
+    z-index: -1
+    position: absolute
+    right: 0
+    left: 0
+    top: 0
+    bottom: 0
+    overflow: hidden
 
-.contact-vfo
-  font-size: 16px
-  margin-top: 30px
+  h1
+    margin-bottom: 0px
+    font-family: edo_szregular
+    font-size: 120px
+    padding-top: 56px
+
+  p.caption
+    margin-bottom: 15px
+    font-size: 30px
+
+  .sign-up-form
+    #email-address
+      margin-left: 25px
+      width: 300px
+
+    button#submit
+      margin-left: 25px
+      width: 100px
+
+    .btn-default, a, #submit
+      color: #878787
+
+  .contact-vfo
+    font-size: 16px
+    margin-top: 30px
