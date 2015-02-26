@@ -10,6 +10,7 @@ gem 'rails_12factor'
 gem 'puma'
 
 group :development, :test do
+  gem 'sqlite3'
   gem 'pry'
   gem 'web-console', '~> 2.0'
   gem 'spring'

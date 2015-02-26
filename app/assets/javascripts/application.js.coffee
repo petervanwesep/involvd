@@ -15,8 +15,10 @@
 $.initialize = (fn) -> $(document).ready -> fn()
 
 $.initialize ->
-  $('.find-volunteers').click ->
-    email_link = "<a href='mailto:contact@volunteeringforoakland.org?subject=Looking for Volunteers!' target='_top'>Volunteering for Oakland</a>"
-    $('.segment-buttons').animate(
-      {opacity: "toggle"}, 250, "linear", -> $(this).after( "<div class='contact-vfo'>Please contact #{email_link} for help setting up your account.</div>" );
-    )
+  $('#volunteer').click -> $('#button-label').text('Volunteer')
+  $('#nonprofit').click -> $('#button-label').text('Nonprofit organization')
+  $('#submit').click ->
+    if $('#email-address').val().length
+      $('.sign-up-form').animate(
+        {opacity: "toggle"}, 250, "linear", -> $(this).after( "<div class='contact-vfo'>Thank you! We'll be in touch with you soon!</div>" );
+      )
