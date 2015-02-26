@@ -1,0 +1,40 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+@font-face
+  font-family: 'edo_szregular'
+  src: url('<%= asset_path 'edosz/edosz-webfont.eot' %>')
+  src: url('<%= asset_path 'edosz/edosz-webfont.eot' %>' + '?#iefix') format('embedded-opentype'), url('<%= asset_path 'edosz/edosz-webfont.woff2' %>') format('woff2'), url('<%= asset_path 'edosz/edosz-webfont.woff' %>') format('woff'), url('<%= asset_path 'edosz/edosz-webfont.ttf' %>') format('truetype'), url('<%= asset_path 'edosz/edosz-webfont.svg' %>' + '#edo_szregular') format('svg')
+  font-weight: normal
+  font-style: normal
+
+body
+  background-color: black
+  color: white
+  font-family: Times
+  text-align: center
+
+h1.give-back
+  font-family: edo_szregular
+  font-size: 120px
+  margin-top: 100px
+
+p.give-back-caption
+  margin: 10px
+  font-size: 30px
+
+button.segment
+  margin: 20px
