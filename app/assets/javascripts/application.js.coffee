@@ -22,3 +22,4 @@ $.initialize ->
       $('.sign-up-form').animate(
         {opacity: "toggle"}, 250, "linear", -> $(this).after( "<div class='contact-vfo'>Thank you! We'll be in touch with you soon!</div>" );
       )
+  $('#content').show()
